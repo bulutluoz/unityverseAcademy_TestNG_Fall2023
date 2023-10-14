@@ -48,7 +48,7 @@ public class C02_SoftAssert extends TestBase {
         // ilk urun isminin Nutella icerdigini test edin
 
         WebElement ilkUrunIsimElementi = driver.findElement(By.xpath("//span[@id='productTitle']"));
-        String expectedUrunIcerik = "Kutella";
+        String expectedUrunIcerik = "Nutella";
         String actualIlkurunIsmi = ilkUrunIsimElementi.getText();
 
         softAssert.assertTrue(actualIlkurunIsmi.contains(expectedUrunIcerik),"ilk urun isim");

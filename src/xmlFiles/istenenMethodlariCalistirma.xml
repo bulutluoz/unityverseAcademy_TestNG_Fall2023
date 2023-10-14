@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+        <!-- 
+        Bir class'daki tum method'lari calistirmak istersek
+        tek tek method secmek yerine
+        class'i calistirmak daha mantikli olur
+        
+        method calistirmalarinda testNG iki alternatif olusturmus
+        1- include  : calismasini istedigimiz method isimlerini yazariz
+                      yazmadiklarimizi testNG calistirmaz
+        2- exclude  : Calismasini ISTEMEDIGIMIZ method isimlerini yazariz
+                      testNG yazdigimiz method(lar) disindaki tum method'lari calistirir              
+        -->
+
+<suite name="istenen method'lar">
+    <test name="method calistirma">
+        
+        <classes>
+            <class name="tests.day9_testNG.C01_Priority">
+                <methods>
+                    <include name="youtubeTest"></include>
+                </methods>
+            </class>
+            <class name="tests.day9_testNG.C02_DependsOnMethods">
+                <methods>
+                    <exclude name="ilkUrunTest"></exclude>
+                </methods>
+            </class>
+        </classes>
+        
+    </test>
+</suite>

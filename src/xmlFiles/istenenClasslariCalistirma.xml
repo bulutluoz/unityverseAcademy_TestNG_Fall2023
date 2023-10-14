@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen classlar">
+    
+    <test name="istenen class">
+        <classes>
+            <class name="tests.day9_testNG.C01_Priority"></class>
+            <class name="tests.day10_TestNG.C01_HardAssert"></class>
+            <class name="tests.day10_TestNG.C02_SoftAssert"></class>
+        </classes>
+        
+    </test>
+
+</suite>
