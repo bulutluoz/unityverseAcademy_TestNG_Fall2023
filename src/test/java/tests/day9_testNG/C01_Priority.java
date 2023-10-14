@@ -23,7 +23,7 @@ public class C01_Priority extends TestBase {
         Assert.assertTrue(actualUrl.contains(expectedUrlIcerik));
     }
 
-    @Test
+    @Test(groups = {"smoke","regression","e2e1"})
     public void youtubeTest(){
 
         driver.get("https://www.youtube.com");
@@ -32,7 +32,7 @@ public class C01_Priority extends TestBase {
         Assert.assertTrue(actualUrl.contains(expectedUrlIcerik));
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void facebookTest(){
 
         driver.get("https://www.facebook.com");

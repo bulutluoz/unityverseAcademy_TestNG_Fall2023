@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="smoke test">
+    <test name="smoke">
+        
+        <classes>
+            <class name="tests.day9_testNG.C01_Priority">
+                <methods>
+                    <exclude name="amazonTest"></exclude>
+                </methods>
+            </class>
+            <class name="tests.day9_testNG.C02_DependsOnMethods">
+                <methods>
+                    <exclude name="ilkUrunTest"></exclude>
+                </methods>
+            </class>
+            <class name="tests.day10_TestNG.C03_SoftAssert"></class>
+        </classes>
+        
+    </test>
+</suite>

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class C03_SoftAssert extends TestBase {
 
-    @Test
+    @Test(groups = {"regression","e2e1","smoke"})
     public void test01(){
 
         // 1. “http://zero.webappsecurity.com/” Adresine gidin

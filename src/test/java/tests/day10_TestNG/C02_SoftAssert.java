@@ -9,7 +9,7 @@ import utilities.TestBase;
 
 public class C02_SoftAssert extends TestBase {
 
-    @Test
+    @Test(groups = {"e2e2"})
     public void amazonTest(){
         /*
             TestNG bir method'da birden fazla assertion oldugunda

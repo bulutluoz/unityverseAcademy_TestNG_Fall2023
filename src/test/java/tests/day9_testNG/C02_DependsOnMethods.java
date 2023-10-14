@@ -30,7 +30,7 @@ public class C02_DependsOnMethods extends TestBase_BeforeClass {
         bagli olunan method da baska method'a bagliysa once onu calistirir.
      */
 
-    @Test
+    @Test(groups = {"smoke","e2e1","e2e2"})
     public void amazonTest(){
         // amazon anasayfaya gidin
         driver.get("https://www.amazon.com");
@@ -40,7 +40,7 @@ public class C02_DependsOnMethods extends TestBase_BeforeClass {
         Assert.assertTrue(actualUrl.contains(expectedUrlIcerik));
     }
 
-    @Test(dependsOnMethods = "amazonTest")
+    @Test(dependsOnMethods = "amazonTest",groups = {"smoke"})
     public void nutellaTest(){
 
         // Nutella icin arama yapin

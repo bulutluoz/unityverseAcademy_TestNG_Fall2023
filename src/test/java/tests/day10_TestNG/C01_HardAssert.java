@@ -11,7 +11,7 @@ import java.sql.Driver;
 
 public class C01_HardAssert extends TestBase {
 
-    @Test
+    @Test(groups = "e2e1")
     public void amazonTest(){
         /*
             TestNG JUnit'deki assertion method'larinin tamamina sahiptir
