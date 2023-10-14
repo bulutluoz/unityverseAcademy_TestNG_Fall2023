@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-public class C04_DataProvider extends TestBase {
+public class C04_AmazonTopluArama extends TestBase {
 
     @Test
     public void amazonTopluArama() {
@@ -46,7 +46,7 @@ public class C04_DataProvider extends TestBase {
 
             aramasonucSayisiStr = aramasonucSayisiStr.replaceAll("\\D", ""); // "3000"
             aramaSonucSayisiInt = Integer.parseInt(aramasonucSayisiStr); // 3000
-
+            System.out.println(aramaSonucSayisiInt);
             Assert.assertTrue(aramaSonucSayisiInt > 1000);
         }
     }
