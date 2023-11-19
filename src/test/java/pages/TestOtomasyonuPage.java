@@ -23,4 +23,6 @@ public class TestOtomasyonuPage {
     public List<WebElement> kategoriElementList;
 
 
+    @FindBy(xpath = "//div[@class='product-box my-2  py-1']")
+    public List<WebElement> bulunanUrunlerListesi;
 }
