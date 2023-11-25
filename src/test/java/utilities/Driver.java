@@ -10,6 +10,20 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 
 public class Driver {
+    /*
+        Driver class'inin sadece getDriver() ile kullanilmasini saglamak,
+        bu class'dan obje olusturulmasina engel olmak icin
+        POM dizayninda Singleton Pattern kullanilir
+
+        Singleton Pattern bir class'dan obje olusturulmasini engellemek icin
+        class icerisinde istenen sartlara sahip constructor olusturup
+        erisimi kapatmamiza dayanir
+     */
+
+    private Driver(){
+
+    }
+
     static WebDriver driver;
 
     public static WebDriver getDriver(){
