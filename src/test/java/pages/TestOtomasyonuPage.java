@@ -67,4 +67,34 @@ public class TestOtomasyonuPage {
 
     @FindBy(xpath = "//*[@*='button-block button-place']")
     public WebElement checkoutButonu;
+
+    @FindBy(xpath = "(//i[@class='fas fa-plus mx-2'])[1]")
+    public WebElement adresEkleButonu;
+
+    @FindBy(xpath = "//input[@id='name']")
+    public WebElement adresEkleFormuIsimKutusu;
+
+    @FindBy(xpath = "(//*[text()='Add Address'])[2]")
+    public WebElement adresEkleFormuSubmitButonu;
+
+    @FindBy(xpath = "//div[@class='address-box']")
+    public WebElement kullaniciAdresiElementi;
+
+    @FindBy(xpath = "(//span[@class='checkmark'])[1]")
+    public WebElement billingAdressCheckBox;
+
+    @FindBy(xpath = "(//span[@class='checkmark'])[2]")
+    public WebElement deliveryAdressSameCheckBox;
+
+    @FindBy(xpath = "(//span[@class='checkmark'])[3]")
+    public WebElement shippingMethodCheckBox;
+
+    @FindBy(xpath = "//*[@name='accept_terms']")
+    public WebElement acceptTermsCheckBox;
+
+    @FindBy(xpath = "//*[@*='button-block button-place mt-3']")
+    public WebElement placeOrderNowButonu;
+
+    @FindBy(xpath = "//*[@*='button-block button-place mt-3']")
+    public WebElement alisverisBasariliYaziElementi;
 }
