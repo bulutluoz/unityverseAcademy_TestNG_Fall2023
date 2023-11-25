@@ -25,4 +25,16 @@ public class TestOtomasyonuPage {
 
     @FindBy(xpath = "//div[@class='product-box my-2  py-1']")
     public List<WebElement> bulunanUrunlerListesi;
+
+    @FindBy(xpath = "(//span[text()='Account'])[1]")
+    public WebElement accountLinki;
+
+    @FindBy(xpath = "//a[text()=' Sign Up']")
+    public WebElement signUpLinki;
+
+    @FindBy(id="firstName")
+    public WebElement signUpFirstnameKutusu;
+
+    @FindBy(id = "btn-submit-form")
+    public WebElement signUpFormuSubmit;
 }
