@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Raporlu testleri calistirma">
+    
+    <test name="Smoke test">
+        
+        <packages>
+            <package name="tests.day13_TestNGReports"></package>
+        </packages>
+        
+    </test>
+</suite>
