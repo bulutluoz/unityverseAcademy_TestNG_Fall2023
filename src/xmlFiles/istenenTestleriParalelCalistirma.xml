@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression" thread-count="2" parallel="tests">
+
+    <test name="browser1">
+        <classes>
+            <class name="tests.day11_POM.C07_QualitydemyNegatifLoginTesti"></class>
+            <class name="tests.day11_POM.C04_FacebookGirisTesti"></class>
+        </classes>
+    </test>
+
+    <test name="browser2">
+        <classes>
+            <class name="tests.day12_POM.C04_NegativeLoginTesti"></class>
+            <class name="tests.day12_POM.C05_UrunAlisverisTesti"></class>
+        </classes>
+    </test>
+</suite>

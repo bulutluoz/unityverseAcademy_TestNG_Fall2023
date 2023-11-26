@@ -36,6 +36,7 @@ public class C05_UrunAlisverisTesti {
         //6- your Cart linkini tiklayin
         testOtomasyonuPage.yourCartLinki.click();
         //7- urunun sepete eklendigini test edin
+        ReusableMethods.bekle(1);
         String sepettekiUrunIsmi = testOtomasyonuPage.sepettekiUrunIsimElementi.getText();
 
         Assert.assertTrue(secilenUrunIsmi.equalsIgnoreCase(sepettekiUrunIsmi));
@@ -65,7 +66,7 @@ public class C05_UrunAlisverisTesti {
                     .sendKeys(Keys.TAB)
                     .sendKeys("01100")
                     .sendKeys(Keys.TAB).perform();
-            ReusableMethods.bekle(5);
+            ReusableMethods.bekle(1);
             testOtomasyonuPage.adresEkleFormuSubmitButonu.click();
         }
             // gereken checkbox'lari click yapin
@@ -77,10 +78,10 @@ public class C05_UrunAlisverisTesti {
         testOtomasyonuPage.placeOrderNowButonu.click();
 
         //10- your order is successfully done yazisinin ciktigini test edin
-
+        ReusableMethods.bekle(1);
         Assert.assertTrue(testOtomasyonuPage.alisverisBasariliYaziElementi.isDisplayed());
 
-        ReusableMethods.bekle(5);
-        //Driver.closeDriver();
+        ReusableMethods.bekle(1);
+        Driver.closeDriver();
     }
 }

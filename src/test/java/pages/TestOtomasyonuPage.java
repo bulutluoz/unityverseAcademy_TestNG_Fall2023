@@ -95,6 +95,6 @@ public class TestOtomasyonuPage {
     @FindBy(xpath = "//*[@*='button-block button-place mt-3']")
     public WebElement placeOrderNowButonu;
 
-    @FindBy(xpath = "//*[@*='button-block button-place mt-3']")
+    @FindBy(xpath = "//h2")
     public WebElement alisverisBasariliYaziElementi;
 }

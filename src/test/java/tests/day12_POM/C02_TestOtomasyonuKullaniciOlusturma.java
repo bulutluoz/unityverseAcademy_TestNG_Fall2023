@@ -38,7 +38,7 @@ public class C02_TestOtomasyonuKullaniciOlusturma {
                 .sendKeys(Keys.TAB)
                 .sendKeys(ConfigReader.getProperty("toGecerliPassword"))
                 .perform();
-        ReusableMethods.bekle(15);
+        ReusableMethods.bekle(10);
         testOtomasyonuPage.signUpFormuSubmit.click();
         ReusableMethods.bekle(5);
     }

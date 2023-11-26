@@ -24,7 +24,7 @@ public class C03_PositiveLoginTesti {
         testOtomasyonuPage.signInFormuSubmitButonu.click();
         //6- Basarili olarak giris yapilabildigini test edin
         Assert.assertTrue(testOtomasyonuPage.logoutButonu.isDisplayed());
-        ReusableMethods.bekle(10);
+        ReusableMethods.bekle(1);
         //7-sayfayi kapatin
         Driver.closeDriver();
     }
