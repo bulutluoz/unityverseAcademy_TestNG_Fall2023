@@ -32,6 +32,7 @@ public class C05_UrunAlisverisTesti {
         //7.adimda urunun sepete eklendigini test edebilmek icin
         //bu adimda urun ismini kaydediyorum
         String secilenUrunIsmi = testOtomasyonuPage.seciliUrunIsimElementi.getText();
+        ReusableMethods.bekle(1);
         testOtomasyonuPage.addToCartButonu.click();
         //6- your Cart linkini tiklayin
         testOtomasyonuPage.yourCartLinki.click();
@@ -44,10 +45,11 @@ public class C05_UrunAlisverisTesti {
         //8- checkout butonuna basin
         ReusableMethods.bekle(1);
         testOtomasyonuPage.checkoutButonu.click();
-
+        ReusableMethods.bekle(1);
         //9- ilgili alanlari doldurup place order now butonuna basin
             // - adres yoksa adress ekleyin
-        if (!testOtomasyonuPage.kullaniciAdresiElementi.isDisplayed()){
+
+        if (testOtomasyonuPage.kullaniciAdresiElementi.size() == 0){
             testOtomasyonuPage.adresEkleButonu.click();
             testOtomasyonuPage.adresEkleFormuIsimKutusu.click();
             ReusableMethods.bekle(3);
@@ -70,6 +72,7 @@ public class C05_UrunAlisverisTesti {
             testOtomasyonuPage.adresEkleFormuSubmitButonu.click();
         }
             // gereken checkbox'lari click yapin
+        ReusableMethods.bekle(1);
         testOtomasyonuPage.billingAdressCheckBox.click();
         testOtomasyonuPage.deliveryAdressSameCheckBox.click();
         testOtomasyonuPage.shippingMethodCheckBox.click();

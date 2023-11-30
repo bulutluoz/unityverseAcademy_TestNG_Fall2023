@@ -78,7 +78,7 @@ public class TestOtomasyonuPage {
     public WebElement adresEkleFormuSubmitButonu;
 
     @FindBy(xpath = "//div[@class='address-box']")
-    public WebElement kullaniciAdresiElementi;
+    public List<WebElement> kullaniciAdresiElementi;
 
     @FindBy(xpath = "(//span[@class='checkmark'])[1]")
     public WebElement billingAdressCheckBox;
